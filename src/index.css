@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --white: white;
   --light-gray: #f0f0f0;
@@ -5,13 +7,23 @@
   --black: #1e1e1e;
   --yellow: #f99c14;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-family: "Montserrat", sans-serif;
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  
 }
 
 #calculator {
@@ -30,6 +42,8 @@
   margin-top: 20px;
   border-radius: 20px;
   background-color: var(--black);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .light-gray {
@@ -173,5 +187,9 @@ button:active {
     border-radius: 50px;
     width: 100%;
     transition: transform 0.1s ease-in-out;
+  }
+
+  h1{
+    font-size: 14px;
   }
 }
